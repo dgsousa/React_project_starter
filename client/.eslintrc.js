@@ -4,9 +4,12 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'airbnb',
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -16,8 +19,9 @@ module.exports = {
   },
   plugins: [
     'react',
+    '@typescript-eslint',
   ],
   rules: {
-    semi: [2, 'always'],
+    'react/jsx-filename-extension': [2, { extensions: ['.tsx'] }],
   },
 };

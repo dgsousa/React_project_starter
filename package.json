@@ -10,8 +10,9 @@
   "scripts": {
     "lint:client": "yarn pnpify eslint client --fix"
   },
-  "dependencies": {
+  "devDependencies": {
     "@yarnpkg/pnpify": "^3.0.0-rc.3",
-    "eslint": "^7.25.0"
+    "eslint": "^7.25.0",
+    "typescript": "^4.2.4"
   }
 }
